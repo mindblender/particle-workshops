@@ -90,7 +90,7 @@ if (!duration) {
 }
 ```
 
-4. Now, since we now that the button has been pressed, we should tell the whole mesh network to toggle their LEDs. We use the `Mesh.publish()` for that, which takes one or two striings as arguments. The first argument is a topic and the second is data. We will only use the topic, and we should choose a topic that will make sense for the purpose. Later other devices will be able to subscribe to this topic and will get notified whenever we publish to this topic. Replace the *Just pressed* comment line with this line, to finish the code.
+4. Now, since we now that the button has been pressed, we should tell the whole mesh network to toggle their LEDs. We use the `Mesh.publish()` for that, which takes one or two strings as arguments. The first argument is a topic and the second is data. We will only use the topic, and we should choose a topic that will make sense for the purpose. Later other devices will be able to subscribe to this topic and will get notified whenever we publish to this topic. Replace the *Just pressed* comment line with this line, to finish the code.
 
 ```cpp
 Mesh.publish("toggle-led");
